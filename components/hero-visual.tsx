@@ -1,0 +1,8 @@
+export function HeroVisual() {
+  return <div className="hero-art relative h-[430px] w-full sm:h-[550px] lg:h-[650px]" aria-label="Celulares e assistência técnica Marcos Cell">
+    <div className="hedgehog-shape absolute right-[-12%] top-[3%] h-[72%] w-[78%] bg-brand opacity-[.10]" />
+    <svg className="absolute inset-0 h-full w-full text-brand opacity-20" viewBox="0 0 600 650" fill="none" aria-hidden="true"><path d="M35 450C155 205 350 90 590 115" stroke="currentColor" strokeWidth="3"/><path d="M15 500C190 270 365 190 600 190" stroke="currentColor"/><path d="M125 585C270 430 410 350 610 345" stroke="currentColor" strokeWidth="2"/></svg>
+    <div className="hero-phone-back absolute bottom-[5%] right-[2%] h-[71%] w-[54%] rotate-[5deg] overflow-hidden rounded-[2.2rem] border-[8px] border-brand-deep bg-[#142d4b] shadow-[0_45px_70px_-30px_rgba(3,20,38,.55)]"><div className="absolute inset-2 overflow-hidden rounded-[1.35rem] bg-[linear-gradient(145deg,#dbeafe,#7eb8ff_45%,#0b5bd3)]"><div className="absolute -right-12 top-16 h-48 w-48 rounded-full border-[28px] border-white/20"/><div className="absolute bottom-14 left-7 text-white"><p className="text-[10px] font-bold uppercase tracking-[.25em] opacity-70">Marcos Cell</p><p className="mt-1 text-xl font-black">Seu celular pronto</p></div></div></div>
+    <div className="hero-phone-front absolute bottom-[2%] left-[7%] h-[55%] w-[39%] -rotate-[9deg] overflow-hidden rounded-[1.8rem] border-[7px] border-slate-800 bg-slate-900 shadow-2xl"><div className="absolute inset-2 rounded-[1.05rem] bg-[linear-gradient(155deg,#eef6ff,#a9d1ff_55%,#3386ed)]"/></div>
+  </div>;
+}
