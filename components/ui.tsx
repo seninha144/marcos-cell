@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import { WHATSAPP_URL } from "@/lib/constants";
 
 export function WhatsAppButton({ children, className = "" }: { children: ReactNode; className?: string }) {
-  return <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className={`brand-button group ${className}`}><MessageCircle className="brand-button-icon" size={18} /><span>{children}</span><ArrowUpRight className="brand-button-arrow" size={17}/></a>;
+  return <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className={`brand-button group ${className}`}><MessageCircle className="brand-button-icon" size={18} /><span>{children}</span><ArrowUpRight className="brand-button-arrow" size={17}/></a>;
 }
 
 export function SectionTitle({ eyebrow, title, text }: { eyebrow?: string; title: string; text?: string }) {
