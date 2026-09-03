@@ -5,7 +5,7 @@ import { WhatsAppButton } from "./ui";
 import { INSTAGRAM_URL, TIKTOK_URL } from "@/lib/constants";
 import { TikTokIcon } from "./social-icons";
 
-const links = [["Serviços", "#servicos"], ["Produtos", "#produtos"], ["Sobre", "#sobre"], ["Localização", "#localizacao"]];
+const links = [["iPhone", "#reparos-iphone"], ["Serviços", "#servicos"], ["Produtos", "#produtos"], ["Sobre", "#sobre"], ["Localização", "#localizacao"]];
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
