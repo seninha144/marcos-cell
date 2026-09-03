@@ -2,6 +2,8 @@
 export const WHATSAPP_NUMBER = "55XXXXXXXXXXX";
 export const INSTAGRAM_URL = "https://instagram.com/SEU_USUARIO";
 export const MAPS_URL = "https://maps.google.com/?q=Iguatu%2C+Ceara";
+// Substitua pela URL oficial do Perfil da Empresa da Marcos Cell no Google.
+export const GOOGLE_REVIEWS_URL = "";
 export const BASE_PATH = "/marcos-cell";
 
 export function assetPath(path: string) {
