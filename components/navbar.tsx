@@ -1,11 +1,12 @@
 "use client";
 import { Instagram, Menu, X } from "lucide-react";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { WhatsAppButton } from "./ui";
-import { INSTAGRAM_URL, TIKTOK_URL } from "@/lib/constants";
+import { assetPath, INSTAGRAM_URL, TIKTOK_URL } from "@/lib/constants";
 import { TikTokIcon } from "./social-icons";
 
-const links = [["iPhone", "#reparos-iphone"], ["Serviços", "#servicos"], ["Produtos", "#produtos"], ["Sobre", "#sobre"], ["Localização", "#localizacao"]];
+const links = [["Reparos", "#reparos-iphone"], ["Serviços", "#servicos"], ["Produtos", "#produtos"], ["Sobre", "#sobre"], ["Localização", "#localizacao"]];
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -18,7 +19,7 @@ export function Navbar() {
   }, []);
   return <header className={`site-header sticky top-0 z-50 ${scrolled ? "site-header-scrolled" : ""}`}>
     <div className="container-page flex h-[82px] items-center justify-between">
-      <a href="#inicio" className="text-[1.35rem] font-black tracking-[-.06em] text-brand-dark" aria-label="Início da Marcos Cell">Marcos<span className="text-brand">Cell</span><span className="ml-1 inline-block h-1.5 w-1.5 bg-brand align-top" /></a>
+      <a href="#inicio" className="flex shrink-0 items-center" aria-label="Início da Marcos Cell"><Image src={assetPath("/images/Logo/marcos-cell-logo.png")} alt="Marcos Cell" width={126} height={50} priority className="h-[46px] w-auto object-contain sm:h-[50px]" /></a>
       <nav className="hidden items-center gap-7 lg:flex">{links.map(([label, href]) => <a key={href} href={href} className="nav-link">{label}</a>)}</nav>
       <div className="hidden items-center gap-5 lg:flex">
         <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Instagram da Marcos Cell" className="social-icon-link"><Instagram size={21}/></a>
