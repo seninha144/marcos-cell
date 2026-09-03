@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Marcos Cell | Conserto de iPhone e Celulares em Iguatu",
-  description: "Assistência técnica em Iguatu com experiência em reparos de iPhone, troca de tela, bateria, conector de carga e manutenção de celulares. Fale com a Marcos Cell."
+  title: "Marcos Cell | Assistência Técnica de Smartphones em Iguatu",
+  description: "Assistência técnica de smartphones em Iguatu para Samsung, Xiaomi, Motorola, Realme e outras marcas, com especialidade em reparos de iPhone. Fale com a Marcos Cell."
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

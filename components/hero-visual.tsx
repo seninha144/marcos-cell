@@ -1,8 +1,14 @@
+import Image from "next/image";
+import { assetPath } from "@/lib/constants";
+
 export function HeroVisual() {
-  return <div className="hero-art relative h-[390px] w-full sm:h-[500px] lg:h-[610px]" aria-label="Composição de smartphones representando os reparos da Marcos Cell">
+  return <div className="hero-art relative h-[390px] w-full sm:h-[500px] lg:h-[610px]" aria-label="Técnico da Marcos Cell realizando reparo em smartphone">
     <div className="hedgehog-shape absolute right-[-12%] top-[3%] h-[72%] w-[78%] bg-brand opacity-[.10]" />
     <svg className="absolute inset-0 h-full w-full text-brand opacity-20" viewBox="0 0 600 650" fill="none" aria-hidden="true"><path d="M35 450C155 205 350 90 590 115" stroke="currentColor" strokeWidth="3"/><path d="M15 500C190 270 365 190 600 190" stroke="currentColor"/><path d="M125 585C270 430 410 350 610 345" stroke="currentColor" strokeWidth="2"/></svg>
-    <div className="hero-phone-back absolute bottom-[5%] right-[2%] h-[72%] w-[54%] rotate-[5deg] overflow-hidden rounded-[2.2rem] border-[8px] border-brand-deep bg-[#d7e9ff] shadow-[0_45px_70px_-30px_rgba(3,20,38,.55)]"><div className="absolute left-5 top-5 grid h-24 w-24 grid-cols-2 gap-2 rounded-[1.4rem] bg-[#b8d6fa] p-3 shadow-inner"><span className="rounded-full border-4 border-slate-700 bg-slate-900"/><span className="rounded-full border-4 border-slate-700 bg-slate-900"/><span className="rounded-full border-4 border-slate-700 bg-slate-900"/><span className="m-auto h-3 w-3 rounded-full bg-white"/></div><div className="absolute inset-x-7 bottom-10 border-t border-brand-dark/15 pt-4"><p className="text-[10px] font-black uppercase tracking-[.22em] text-brand">Reparo de iPhone</p><p className="mt-1 text-lg font-black text-brand-dark">Diagnóstico e cuidado</p></div></div>
-    <div className="hero-phone-front absolute bottom-[2%] left-[7%] h-[56%] w-[39%] -rotate-[9deg] overflow-hidden rounded-[1.8rem] border-[7px] border-slate-800 bg-slate-900 shadow-2xl"><div className="absolute inset-2 overflow-hidden rounded-[1.05rem] bg-[#cce3ff]"><span className="absolute left-1/2 top-2 h-4 w-20 -translate-x-1/2 rounded-full bg-slate-900"/><div className="absolute inset-x-5 bottom-8"><span className="mb-3 block h-1 w-10 bg-brand"/><p className="text-xs font-black uppercase tracking-[.14em] text-brand-dark">Tela • bateria<br/>• carregamento</p></div></div></div>
+    <div className="hero-repair-photo absolute inset-x-[3%] bottom-[3%] top-[5%] overflow-hidden border-[8px] border-white bg-brand-dark shadow-[0_45px_70px_-30px_rgba(3,20,38,.55)] sm:left-[8%]">
+      <Image src={assetPath("/images/Loja/consertando-telefone.webp")} alt="Técnico da Marcos Cell consertando um smartphone na bancada" fill priority sizes="(max-width: 1024px) 100vw, 55vw" className="object-cover object-[center_62%]" />
+      <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-brand-deep/90 to-transparent"/>
+      <div className="absolute bottom-6 left-6 text-white"><p className="text-[10px] font-black uppercase tracking-[.2em] text-blue-200">Reparo de smartphones</p><p className="mt-1 text-lg font-black">Experiência na bancada</p></div>
+    </div>
   </div>;
 }
