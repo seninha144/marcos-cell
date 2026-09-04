@@ -1,5 +1,4 @@
-// Substitua pelos dados oficiais antes da publicação.
-export const WHATSAPP_NUMBER = "55XXXXXXXXXXX";
+export const WHATSAPP_NUMBER = "5588997462570";
 export const INSTAGRAM_URL = "https://www.instagram.com/marcoscell90/";
 export const TIKTOK_URL = "https://www.tiktok.com/@marcos1986m";
 export const GOOGLE_MAPS_URL =
@@ -19,5 +18,5 @@ export function buildWhatsAppUrl(message: string) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
-export const WHATSAPP_URL = buildWhatsAppUrl("Olá! Vi o site da Marcos Cell e gostaria de saber mais sobre um serviço.");
-export const IPHONE_REPAIR_WHATSAPP_URL = buildWhatsAppUrl("Olá! Vi o site da Marcos Cell e gostaria de pedir um orçamento para reparo do meu iPhone.");
+export const WHATSAPP_URL = buildWhatsAppUrl("Olá! Gostaria de saber mais sobre um serviço da Marcos Cell.");
+export const IPHONE_REPAIR_WHATSAPP_URL = buildWhatsAppUrl("Olá! Gostaria de pedir um orçamento para reparo do meu iPhone.");
